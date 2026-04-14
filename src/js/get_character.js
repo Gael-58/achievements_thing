@@ -40,7 +40,7 @@ export async function getCharacterDetails(charRoute, achievRoute, key) {
         getCharacterAchievements(divCharacterDetails, charRoute, achievRoute, key);
 
         function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
-            output = charRoute;
+            let output = charRoute;
             for (key of keys) {
                 output = output[key];
             }
