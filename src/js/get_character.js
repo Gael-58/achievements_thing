@@ -70,7 +70,7 @@ export async function getCharacterDetails(charRoute, achievRoute, key) {
                     }
 
                 } else if (output[i].constructor === ({}).constructor) {
-                    getCharacterAchievements(charRoute, keys.push(i));
+                    getCharacterAchievements(outputDiv, charRoute, achievRoute, keys.push(i));
                 } else {
                     for (t of getAchievement(achievRoute, keys)) {
                         const title = document.createElement("h4");
@@ -103,5 +103,6 @@ export async function getCharacterDetails(charRoute, achievRoute, key) {
     return divCharacterDetails.cloneNode(true);
 
 }
+
 
 
