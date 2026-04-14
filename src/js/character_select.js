@@ -10,7 +10,8 @@ export async function getCharacterSelector(route){
       const listOption = document.createElement("option");
       listOption.value = key;
       listOption.innerText = data[key].display_name;
-      characterSelector.appendChild(listOption.cloneNode(true));
+      listsDataList.appendChild(listOption.cloneNode(true));
     }
   return characterSelector;
 }
+

@@ -105,4 +105,3 @@ export async function getCharacterDetails(charRoute, achievRoute, key) {
 }
 
 
-
