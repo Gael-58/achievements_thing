@@ -5,7 +5,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
     console.log("test1.1")
     const divCharacterDetails = document.createElement("div");
     let data = await getData(charRoute);
-    console.log("data[key] = " data[key])
+    console.log("data[key] = " + data[key])
     if (data[key] != null && data[key] != '') {
             console.log("test1.2")
         const section = document.createElement("h1");
