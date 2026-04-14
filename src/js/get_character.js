@@ -52,10 +52,10 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             let output = await getData(charRoute);
             if(keys != null && keys[0] != ''){
             
-            for (key of keys) {
+            for (let key of keys) {
                 if(key == keys[0]){
                 output = output[key]
-                }
+                } else{
                 output = output.key;
             }
             }
