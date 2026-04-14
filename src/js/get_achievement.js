@@ -1,6 +1,6 @@
 export async function getAchievement(route, ...keys){
-    data = route;
-    output = data;
+    const data = route;
+    let output = data;
     for(key of keys){
         output = output[key];
     }
