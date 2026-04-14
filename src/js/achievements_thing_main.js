@@ -15,7 +15,7 @@ characterSelector.id = "characterSelect";
 
 const btnGetSelection = document.createElement("input");
 btnGetSelection.type = "button";
-
+btnGetSelection.innerText = "press me?";
 divCharacterSelect.append(characterSelector);
 divCharacterSelect.append(btnGetSelection);
 
