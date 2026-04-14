@@ -11,7 +11,7 @@ const divCharacterSelect = document.createElement("div");
 const divInnerStuff = document.createElement("div");
 
 const characterSelector = getCharacterSelector(charRoute);
-characterSelector.id = "char_selector";
+characterSelector.id = "characterSelect";
 
 const btnGetSelection = document.createElement("input");
 btnGetSelection.type = "button";
@@ -25,7 +25,7 @@ btnGetSelection.addEventListener("click", function (event) {
     }
     (async () => {
         event.preventDefault();
-        for (let key in Array.from(document.getElementById("char_selector")).filter(option => option.selected).map(option => option.value)) {
+        for (let key in Array.from(document.getElementById("characterSelect")).filter(option => option.selected).map(option => option.value)) {
             divInnerStuff.append(getCharacterDetails(charRoute, achievRoute, key).cloneNode(true));
         }
 
