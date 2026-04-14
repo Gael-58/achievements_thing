@@ -81,7 +81,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 } else if (output[i].constructor === ({}).constructor) {
                     getCharacterAchievements(outputDiv, charRoute, achievRoute, keys.push(i));
                 } else {
-                    for (t of getAchievement(achievRoute, keys)) {
+                    for (t of await getAchievement(achievRoute, keys)) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
