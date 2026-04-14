@@ -1,8 +1,8 @@
 import { getCharacterSelector } from 'https://gael-58.github.io/achievements_thing/src/js/character_select.js';
 import { getCharacterDetails } from 'https://gael-58.github.io/achievements_thing/src/js/get_character.js';
 
-charRoute = "https://gael-58.github.io/achievements_thing/src/data/characters.json";
-achievRoute = "https://gael-58.github.io/achievements_thing/src/data/achievements.json";
+const charRoute = "https://gael-58.github.io/achievements_thing/src/data/characters.json";
+const achievRoute = "https://gael-58.github.io/achievements_thing/src/data/achievements.json";
 
 
 
