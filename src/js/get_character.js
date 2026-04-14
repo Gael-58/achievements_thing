@@ -3,7 +3,6 @@ import { getAchievement } from 'https://gael-58.github.io/achievements_thing/src
 export async function getCharacterDetails(charRoute, achievRoute, key) {
     const divCharacterDetails = document.createElement("div");
     const urlCharacters = charRoute;
-    const achievRoute = achievRoute;
     let data = await getData(urlCharacters);
     if (data[key] != null && data[key] != '') {
         const section = document.createElement("h1");
