@@ -1,3 +1,4 @@
+import { getData } from 'https://gael-58.github.io/achievements_thing/src/js/getData.js';
 
 export async function getCharacterSelector(route){
   const urlCharacters = route;
@@ -14,3 +15,4 @@ export async function getCharacterSelector(route){
     }
   return characterSelector;
 }
+
