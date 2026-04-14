@@ -1,7 +1,7 @@
 import { getAchievement } from 'https://gael-58.github.io/achievements_thing/src/js/get_achievement.js';
 import { getData } from 'https://gael-58.github.io/achievements_thing/src/js/getData.js';
 
-export async function getCharacterDetails(charRoute, achievRoute, key) {
+export async function getCharacterDetails(divToAppendInto, charRoute, achievRoute, key) {
     const divCharacterDetails = document.createElement("div");
     let data = await getData(charRoute);
     if (data[key] != null && data[key] != '') {
@@ -99,8 +99,8 @@ export async function getCharacterDetails(charRoute, achievRoute, key) {
         }
 
     }
+    divToAppendInto.appendChild(divCharacterDetails.cloneNode(true));
 
-    return divCharacterDetails.cloneNode(true);
 
 }
 
