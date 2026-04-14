@@ -50,8 +50,10 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
         async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
             let output = await getData(charRoute);
+            if(keys != null && keys[0] != ''){
             for (key of keys) {
                 output = output.key;
+            }
             }
 
             for (let i in output) {
