@@ -26,7 +26,7 @@ btnGetSelection.addEventListener("click", function (event) {
     (async () => {
         event.preventDefault();
         for (let key in Array.from(document.getElementById("characterSelect")).filter(option => option.selected).map(option => option.value)) {
-            divInnerStuff.append(getCharacterDetails(charRoute, achievRoute, key).cloneNode(true));
+            getCharacterDetails(divInnerStuff, charRoute, achievRoute, key);
         }
 
 
