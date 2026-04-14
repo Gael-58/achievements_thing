@@ -31,9 +31,9 @@ btnGetSelection.addEventListener("click", function (event) {
 
 
         
-        document.body.appendChild(divInnerStuff);
 
     })();
 });
     document.body.appendChild(divCharacterSelect);
+    document.body.appendChild(divInnerStuff);
     
