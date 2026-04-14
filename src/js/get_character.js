@@ -59,6 +59,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 output = output.key;
             }
             }
+            }
 
             for (let i in output) {
                 if (output[i] == null || output[i] == '') {
