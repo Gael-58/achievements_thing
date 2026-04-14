@@ -14,29 +14,29 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
         const true_name = document.createElement("h6");
         true_name.innerText = data[key].name;
-        divCharacterDetails.append(true_name.cloneNode(true));
+        divCharacterDetails.appendChild(true_name.cloneNode(true));
 
         }
         if(data[key].display_name != null && data[key].display_name != ""){
         subSection.innerText = "name";
         const name = document.createElement("h2");
         name.innerText = data[key].display_name;
-        divCharacterDetails.append(subSection.cloneNode(true));
-        divCharacterDetails.append(name.cloneNode(true));
+        divCharacterDetails.appendChild(subSection.cloneNode(true));
+        divCharacterDetails.appendChild(name.cloneNode(true));
         }
         if(data[key].details != null && data[key].details != ""){
         subSection.innerText = "description";
         const details = document.createElement("p");
         details.innerText = data[key].display_name;
-        divCharacterDetails.append(subSection.cloneNode(true));
-        divCharacterDetails.append(details.cloneNode(true));
+        divCharacterDetails.appendChild(subSection.cloneNode(true));
+        divCharacterDetails.appendChild(details.cloneNode(true));
         }
-        divCharacterDetails.append(br.cloneNode(true));
-        divCharacterDetails.append(br.cloneNode(true));
-        divCharacterDetails.append(br.cloneNode(true));
-        divCharacterDetails.append(br.cloneNode(true));
+        divCharacterDetails.appendChild(br.cloneNode(true));
+        divCharacterDetails.appendChild(br.cloneNode(true));
+        divCharacterDetails.appendChild(br.cloneNode(true));
+        divCharacterDetails.appendChild(br.cloneNode(true));
         section.innerText = "Achievements:";
-        divCharacterDetails.append(section.cloneNode(true));
+        divCharacterDetails.appendChild(section.cloneNode(true));
         getCharacterAchievements(divCharacterDetails, charRoute, achievRoute, key);
 
         async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
@@ -53,20 +53,20 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         const br = document.createElement("br");
                         title.innerText = "Name";
                         descr.innerText = t.name;
-                        outputDiv.append(title.cloneNode(true));
-                        outputDiv.append(descr.cloneNode(true));
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Effect";
                         descr.innerText = t.effect;
-                        outputDiv.append(title.cloneNode(true));
-                        outputDiv.append(descr.cloneNode(true));
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Name";
                         descr.innerText = t.method;
-                        outputDiv.append(title.cloneNode(true));
-                        outputDiv.append(descr.cloneNode(true));
-                        outputDiv.append(br.cloneNode(true));
-                        outputDiv.append(br.cloneNode(true));
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
                     }
 
                 } else if (output[i].constructor === ({}).constructor) {
@@ -78,20 +78,20 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         const br = document.createElement("br");
                         title.innerText = "Name";
                         descr.innerText = t.name.replace("{n}", output[i]);
-                        outputDiv.append(title.cloneNode(true));
-                        outputDiv.append(descr.cloneNode(true));
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Effect";
                         descr.innerText = t.effect;
-                        outputDiv.append(title.cloneNode(true));
-                        outputDiv.append(descr.cloneNode(true));
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Name";
                         descr.innerText = t.method;
-                        outputDiv.append(title.cloneNode(true));
-                        outputDiv.append(descr.cloneNode(true));
-                        outputDiv.append(br.cloneNode(true));
-                        outputDiv.append(br.cloneNode(true));
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
                     }
                 }
             }
