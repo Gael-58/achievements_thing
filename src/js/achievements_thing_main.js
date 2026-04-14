@@ -11,7 +11,7 @@ const divCharacterSelect = document.createElement("div");
 const divInnerStuff = document.createElement("div");
 
 const characterSelector = getCharacterSelector(charRoute);
-characterSelector.id = "char_selector"
+characterSelector.id = "char_selector";
 
 const btnGetSelection = document.createElement("input");
 btnGetSelection.type = "button";
