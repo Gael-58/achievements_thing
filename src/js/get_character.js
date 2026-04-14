@@ -48,7 +48,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         divCharacterDetails.appendChild(section.cloneNode(true));
         getCharacterAchievements(divCharacterDetails, charRoute, achievRoute, key);
 
-        async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
+        async function getCharacterAchievements(outputDiv, charRoute[key], achievRoute, ...keys) {
             let output = await getData(charRoute);
             for (key of keys) {
                 output = output.key;
