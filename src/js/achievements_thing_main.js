@@ -9,8 +9,8 @@ const achievRoute = "https://gael-58.github.io/achievements_thing/src/data/achie
 
 const divCharacterSelect = document.createElement("div");
 const divInnerStuff = document.createElement("div");
-
-const characterSelector = getCharacterSelector(charRoute);
+const characterSelector = document.createElement("select");
+getCharacterSelector(characterSelector, charRoute);
 characterSelector.id = "characterSelect";
 
 const btnGetSelection = document.createElement("input");
