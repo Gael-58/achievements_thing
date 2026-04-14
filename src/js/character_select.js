@@ -1,8 +1,7 @@
 import { getData } from 'https://gael-58.github.io/achievements_thing/src/js/getData.js';
 
-export async function getCharacterSelector(route){
+export async function getCharacterSelector(characterSelector, route){
   const urlCharacters = route;
-  const characterSelector = document.createElement("select");
   characterSelector.id = "characterSelect";
   // characterSelector.multiple = true;
     
@@ -13,6 +12,5 @@ export async function getCharacterSelector(route){
       listOption.innerText = data[key].display_name;
       characterSelector.appendChild(listOption.cloneNode(true));
     }
-  return characterSelector;
 }
 
