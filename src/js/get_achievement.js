@@ -3,7 +3,7 @@ import { getData } from 'https://gael-58.github.io/achievements_thing/src/js/get
 export async function getAchievement(route, ...keys){
     const data = route;
     let output = getData(data);
-    for(key of keys){
+    for(let key of keys){
         output = output[key];
     }
     return output;
