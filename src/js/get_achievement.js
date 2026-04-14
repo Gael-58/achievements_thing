@@ -4,6 +4,7 @@ export async function getAchievement(route, ...keys){
     const data = route;
     let output = getData(data);
     for(let key of keys){
+         console.log(output);
         output = output[key];
         
     }
