@@ -26,9 +26,12 @@ btnGetSelection.addEventListener("click", function (event) {
     (async () => {
         event.preventDefault();
         for (let key in Array.from(document.getElementById("characterSelect")).filter(option => option.selected).map(option => option.value)) {
-            console.log("test1")
+            
+            console.log("test1");
+            console.log("key " + key);
+            
             getCharacterDetails(divInnerStuff, charRoute, achievRoute, key);
-            console.log("test2")
+            console.log("test2");
         }
 
 
