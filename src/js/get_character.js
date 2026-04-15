@@ -23,14 +23,14 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         if(data[key].display_name != null && data[key].display_name != ""){
         subSection.innerText = "name";
         const name = document.createElement("h2");
-        name.innerText = data[key].display_name;
+        name.innerText = data[key][display_name];
         divCharacterDetails.appendChild(subSection.cloneNode(true));
         divCharacterDetails.appendChild(name.cloneNode(true));
         }
         if(data[key].details != null && data[key].details != ""){
         subSection.innerText = "description";
         const details = document.createElement("p");
-        details.innerText = data[key].display_name;
+        details.innerText = data[key].details;
         divCharacterDetails.appendChild(subSection.cloneNode(true));
         divCharacterDetails.appendChild(details.cloneNode(true));
         }
