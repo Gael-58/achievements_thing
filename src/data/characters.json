@@ -122,13 +122,13 @@
                         "god_revive_snake": null,
                         "thief_shiny_tooth": false
                     }
-                }
+                },
                 "legend": {
                     "worshipped": {
                         "1": null
                     }
                 },
-                "pet_collector_euphemism": 15,
+                "pet_collector_euphemism": 15
             }
         },
         "azula_main": {
