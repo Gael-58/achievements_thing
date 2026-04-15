@@ -97,6 +97,28 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(br.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
                     }
+                    /*
+                        console.log("newdata " + newData);
+                        const title = document.createElement("h4");
+                        const descr = document.createElement("p");
+                        const br = document.createElement("br");
+                        title.innerText = "Name";
+                        descr.innerText = newData.name;
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+
+                        title.innerText = "Effect";
+                        descr.innerText = newData.effect;
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+
+                        title.innerText = "Method";
+                        descr.innerText = newData.method;
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
+                    */
 
                 } else if (JSON.stringify(output[i]).includes(':')) {
                     console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":{") + ") (" + JSON.stringify(output[i]) + ")");
@@ -129,6 +151,30 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(br.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
                     }
+                    /*
+                        console.log("newdata " + newData);
+                        const title = document.createElement("h4");
+                        const descr = document.createElement("p");
+                        const br = document.createElement("br");
+                        title.innerText = "Name";
+
+                        descr.innerText = newData.name;
+                        descr.innerText = descr.innerText.replace("{n}", output[i]);
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+
+                        title.innerText = "Effect";
+                        descr.innerText = newData.effect;
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+
+                        title.innerText = "Method";
+                        descr.innerText = newData.method;
+                        outputDiv.appendChild(title.cloneNode(true));
+                        outputDiv.appendChild(descr.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
+                        outputDiv.appendChild(br.cloneNode(true));
+                    */
                 }
             }
 
