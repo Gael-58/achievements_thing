@@ -49,28 +49,28 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             
             console.log("getCharacter keys = " + keys.toString());
             let output = await getData(charRoute);
-                console.log("getCharacter output initial = " + JSON.stringify(output));
+                // console.log("getCharacter output initial = " + JSON.stringify(output));
             if(keys != null && keys[0] != ''){
 
 
                 
             for (let key of keys) {
-                   console.log("getCharacter output key = " + key);
+                    console.log("getCharacter output key = " + key);
                 //if(key == keys[0]){
                 output = output[key]
                 /*} else{
                 output = output.key;
             }*/
-                console.log("getCharacter output not_final = " + JSON.stringify(output));
+                // console.log("getCharacter output not_final = " + JSON.stringify(output));
             }
                 
             }
             console.log("getCharacter true output = " + JSON.stringify(output));
             for (let i in output) {
                     console.log("getCharacter i = " + i);
-                    console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
+                     console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
                 if (output[i] == null || output[i] == '') {
-                    const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length)], i);
+                    const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     for (let t in newData) {
                         const title = document.createElement("h4");
@@ -99,7 +99,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     
                     getCharacterAchievements.apply(null, [outputDiv, charRoute, achievRoute, ...keys, i]);
                 } else {
-                    const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length)], i);
+                    const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     for (let t in newData) {
                     // for (t of newData) {
