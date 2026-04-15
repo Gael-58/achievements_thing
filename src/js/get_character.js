@@ -2,20 +2,18 @@ import { getAchievement } from 'https://gael-58.github.io/achievements_thing/src
 import { getData } from 'https://gael-58.github.io/achievements_thing/src/js/getData.js';
 
 export async function getCharacterDetails(divToAppendInto, charRoute, achievRoute, key) {
-    console.log("test1.1");
     const divCharacterDetails = document.createElement("div");
     let data = await getData(charRoute);
     console.log("key " + key);
     console.log("data[key] = " + data[key]);
     if (data[key] != null && data[key] != '') {
-            console.log("test1.2")
+
         const section = document.createElement("h1");
         const subSection = document.createElement("h2");
         const br = document.createElement("br");
         section.innerText = "Name & details";
 
         
-        console.log("test1.3");
 
         
         divCharacterDetails.appendChild(section.cloneNode(true))
@@ -49,6 +47,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         getCharacterAchievements(divCharacterDetails, charRoute, achievRoute, key, "achievements");
 
         async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
+            console.log("getCharacter keys = " + keys.toString);
             let output = await getData(charRoute);
             if(keys != null && keys[0] != ''){
             
@@ -62,7 +61,9 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             }
 
             for (let i in output) {
-                if (output[i] == null || output[i] == '') {
+                    console.log("getCharacter i = " + i);
+                    console.log("getCharacter output.i = " + output.i);
+                if (output.i == null || output.i == '') {
                     for (t of await getAchievement(achievRoute, keys.splice(0, 2))) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
@@ -85,7 +86,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(br.cloneNode(true));
                     }
 
-                } else if (output[i].constructor === ({}).constructor) {
+                } else if (output.i.constructor === ({}).constructor) {
                     getCharacterAchievements(outputDiv, charRoute, achievRoute, keys.push(i));
                 } else {
                     for (t of await getAchievement(achievRoute, keys.splice(0, 2))) {
