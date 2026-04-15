@@ -12,10 +12,6 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         const subSection = document.createElement("h2");
         const br = document.createElement("br");
         section.innerText = "Name & details";
-
-        
-
-        
         divCharacterDetails.appendChild(section.cloneNode(true))
         if(data[key].name != null && data[key].name != ""){
         
