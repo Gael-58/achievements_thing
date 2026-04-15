@@ -94,7 +94,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(br.cloneNode(true));
                     }
 
-                } else if (JSON.stringify(output[i]).includes(":{")) {
+                } else if (JSON.stringify(output[i]).includes(':')) {
                     console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(':') + ") (" + JSON.stringify(output[i]) + ")");
                     
                     getCharacterAchievements.apply(null, [outputDiv, charRoute, achievRoute, ...keys, i]);
