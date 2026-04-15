@@ -23,7 +23,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         if(data[key].display_name != null && data[key].display_name != ""){
         subSection.innerText = "name";
         const name = document.createElement("h2");
-        name.innerText = data[key.display_name;
+        name.innerText = data[key].display_name;
         divCharacterDetails.appendChild(subSection.cloneNode(true));
         divCharacterDetails.appendChild(name.cloneNode(true));
         }
@@ -110,7 +110,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         const br = document.createElement("br");
                         title.innerText = "Name";
                         descr.innerText = newData[t].name.;
-                        descr.innerText = descr.innerText.replace("{n}", output[i])
+                        descr.innerText = descr.innerText.replace("{n}", output[i]);
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
