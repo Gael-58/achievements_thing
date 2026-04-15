@@ -68,8 +68,8 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             console.log("getCharacter output = " + JSON.stringify(output));
             for (let i in output) {
                     console.log("getCharacter i = " + i);
-                    console.log("getCharacter output.i = " + JSON.stringify(output.i));
-                if (output.i == null || output.i == '') {
+                    console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
+                if (output[i] == null || output[i] == '') {
                     for (t of await getAchievement(achievRoute, keys.splice(0, 2))) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
@@ -92,7 +92,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(br.cloneNode(true));
                     }
 
-                } else if (output.i.constructor === ({}).constructor) {
+                } else if (output[i].constructor === ({}).constructor) {
                     getCharacterAchievements(outputDiv, charRoute, achievRoute, keys.push(i));
                 } else {
                     for (t of await getAchievement(achievRoute, keys.splice(0, 2))) {
