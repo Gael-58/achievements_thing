@@ -59,7 +59,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             }
             }
             }
-
+            console.log("getCharacter output = " + JSON.stringify(output));
             for (let i in output) {
                     console.log("getCharacter i = " + i);
                     console.log("getCharacter output.i = " + JSON.stringify(output.i));
