@@ -116,12 +116,6 @@
             "name": "Utziah",
             "display_name": "Utziah",
             "achievements": {
-                "legend": {
-                    "worshipped": {
-                        "1": null
-                    }
-                },
-                "pet_collector_euphemism": 15,
                 "unique": {
                     "snake_utziah_main_unique": {
                         "god_sneaky_snake": null,
@@ -129,6 +123,12 @@
                         "thief_shiny_tooth": false
                     }
                 }
+                "legend": {
+                    "worshipped": {
+                        "1": null
+                    }
+                },
+                "pet_collector_euphemism": 15,
             }
         },
         "azula_main": {
