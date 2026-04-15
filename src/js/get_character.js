@@ -13,19 +13,21 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         const br = document.createElement("br");
         section.innerText = "Name & details";
         divCharacterDetails.appendChild(section.cloneNode(true))
+        if((data[key].display_name != null && data[key].display_name != "") || (data[key].name != null && data[key].name != "")){
+        subSection.innerText = "name";
+        divCharacterDetails.appendChild(subSection.cloneNode(true));
+            
         if(data[key].name != null && data[key].name != ""){
         
         const true_name = document.createElement("h6");
         true_name.innerText = data[key].name;
         divCharacterDetails.appendChild(true_name.cloneNode(true));
-        
         }
         if(data[key].display_name != null && data[key].display_name != ""){
-        subSection.innerText = "name";
         const name = document.createElement("h1");
         name.innerText = data[key].display_name;
-        divCharacterDetails.appendChild(subSection.cloneNode(true));
         divCharacterDetails.appendChild(name.cloneNode(true));
+        }
         }
         if(data[key].details != null && data[key].details != ""){
         subSection.innerText = "description";
