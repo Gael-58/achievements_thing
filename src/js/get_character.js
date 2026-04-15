@@ -35,9 +35,6 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         divCharacterDetails.appendChild(details.cloneNode(true));
         }
         divCharacterDetails.appendChild(br.cloneNode(true));
-        divCharacterDetails.appendChild(br.cloneNode(true));
-        divCharacterDetails.appendChild(br.cloneNode(true));
-        divCharacterDetails.appendChild(br.cloneNode(true));
         section.innerText = "Achievements:";
         divCharacterDetails.appendChild(section.cloneNode(true));
         divToAppendInto.appendChild(divCharacterDetails.cloneNode(true));
@@ -95,13 +92,12 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
-                        outputDiv.appendChild(br.cloneNode(true));
                     
 
                 } else if (JSON.stringify(output[i]).includes(':')) {
                     console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":") + ") (" + JSON.stringify(output[i]) + ")");
                     
-                    getCharacterAchievements.apply(null, [outputDiv, (prefix + "    "), charRoute, achievRoute, ...keys, i]);
+                    getCharacterAchievements.apply(null, [outputDiv, (prefix + "      "), charRoute, achievRoute, ...keys, i]);
                 } else {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
@@ -125,7 +121,6 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         descr.innerText = prefix + newData.method;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
-                        outputDiv.appendChild(br.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
                     
                 }
