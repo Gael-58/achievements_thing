@@ -48,6 +48,9 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
         async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
             console.log("NEW getCharacter ROUND");
+            console.log("getCharacter charRoute = " + charRoute);
+            console.log("getCharacter achievRoute = " + achievRoute);
+            
             console.log("getCharacter keys = " + keys.toString());
             let output = await getData(charRoute);
                 console.log("getCharacter output initial = " + JSON.stringify(output));
@@ -71,7 +74,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     console.log("getCharacter i = " + i);
                     console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
                 if (output[i] == null || output[i] == '') {
-                    for (t of await getData(await getAchievement(achievRoute, keys.slice(2,keys.length)))) {
+                    for (t of await getAchievement keys.slice(2,keys.length))) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
@@ -99,7 +102,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     keys.push(i)
                     getCharacterAchievements(outputDiv, charRoute, achievRoute, keys);
                 } else {
-                    for (t of await getData(await getAchievement(achievRoute, keys.slice(2,keys.length)))) {
+                    for (t of await getAchievement(achievRoute, keys.slice(2,keys.length))) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
