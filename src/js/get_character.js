@@ -72,7 +72,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 if (output[i] == null || output[i] == '') {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length)]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
-                    for (t in newData) {
+                    for (let t in newData) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
@@ -102,7 +102,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 } else {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length)]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
-                    for (t in newData) {
+                    for (let t in newData) {
                     // for (t of newData) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
