@@ -71,23 +71,23 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
                 if (output[i] == null || output[i] == '') {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length)]);
-                    console.log("getAchievement.apply returns: " + newData);
-                    for (t of newData) {
+                    console.log("getAchievement.apply returns: " + JSON.stringify(newData));
+                    for (t in newData) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
                         title.innerText = "Name";
-                        descr.innerText = t.name;
+                        descr.innerText = newData[t].name;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Effect";
-                        descr.innerText = t.effect;
+                        descr.innerText = newData[t].effect;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Name";
-                        descr.innerText = t.method;
+                        descr.innerText = newData[t].method;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
@@ -101,23 +101,24 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     getCharacterAchievements.apply(null, [outputDiv, charRoute, achievRoute, ...keys]);
                 } else {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length)]);
-                    console.log("getAchievement.apply returns: " + newData);
-                    for (t of newData) {
+                    console.log("getAchievement.apply returns: " + JSON.stringify(newData));
+                    for (t in newData) {
+                    // for (t of newData) {
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
                         title.innerText = "Name";
-                        descr.innerText = t.name.replace("{n}", output[i]);
+                        descr.innerText = newData[t].name.replace("{n}", output[i]);
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Effect";
-                        descr.innerText = t.effect;
+                        descr.innerText = newData[t].effect;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Name";
-                        descr.innerText = t.method;
+                        descr.innerText = newData[t].method;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
