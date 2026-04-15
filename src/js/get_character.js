@@ -108,17 +108,17 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
                         title.innerText = "Name";
-                        descr.innerText = (newData[t].name).replace("{n}", output[i]);
+                        descr.innerText = (newData[t][name]).toString().replace("{n}", output[i]);
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Effect";
-                        descr.innerText = newData[t].effect;
+                        descr.innerText = newData[t][effect];
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
                         title.innerText = "Name";
-                        descr.innerText = newData[t].method;
+                        descr.innerText = newData[t][method];
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
                         outputDiv.appendChild(br.cloneNode(true));
