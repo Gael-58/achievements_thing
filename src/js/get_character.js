@@ -49,9 +49,9 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
             console.log("getCharacter keys = " + keys.toString());
             let output = await getData(charRoute);
+                console.log("getCharacter output initial = " + JSON.stringify(output));
             if(keys != null && keys[0] != ''){
 
-                console.log("getCharacter output initial = " + JSON.stringify(output));
 
                 
             for (let key of keys) {
@@ -65,7 +65,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             }
                 
             }
-            console.log("getCharacter output = " + JSON.stringify(output));
+            console.log("getCharacter true output = " + JSON.stringify(output));
             for (let i in output) {
                     console.log("getCharacter i = " + i);
                     console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
@@ -92,7 +92,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(br.cloneNode(true));
                     }
 
-                } else if (output[i].constructor === ({}).constructor) {
+                } else if (JSON.stringify(output[i]).includes(":{")) {
                     getCharacterAchievements(outputDiv, charRoute, achievRoute, keys.push(i));
                 } else {
                     for (t of await getAchievement(achievRoute, keys.splice(0, 2))) {
