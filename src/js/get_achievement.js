@@ -6,7 +6,7 @@ export async function getAchievement(route, ...keys){
     console.log("getAchievement keys = " + keys.toString());
     
     for(let key of keys){
-        output = output[key]
+        output = output[key];
     }
     console.log("getAchievement output = " + JSON.stringify(output));
     return output;
