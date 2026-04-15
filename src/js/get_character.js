@@ -55,11 +55,12 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
                 
             for (let key of keys) {
-                if(key == keys[0]){
+                   console.log("getCharacter output key = " + key);
+                /*if(key == keys[0]){
                 output = output[key]
-                } else{
+                } else{*/
                 output = output.key;
-            }
+            //}
             }
                 console.log("getCharacter output not_final = " + JSON.stringify(output));
             }
