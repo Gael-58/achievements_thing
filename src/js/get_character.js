@@ -95,7 +95,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     }
 
                 } else if (JSON.stringify(output[i]).includes(":{")) {
-                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":{") + ") (" + JSON.stringify(output[i]) + ")");
+                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(':') + ") (" + JSON.stringify(output[i]) + ")");
                     
                     getCharacterAchievements.apply(null, [outputDiv, charRoute, achievRoute, ...keys, i]);
                 } else {
