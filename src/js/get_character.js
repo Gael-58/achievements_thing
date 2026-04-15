@@ -50,7 +50,10 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             console.log("getCharacter keys = " + keys.toString());
             let output = await getData(charRoute);
             if(keys != null && keys[0] != ''){
-            
+
+                console.log("getCharacter output initial = " + JSON.stringify(output));
+
+                
             for (let key of keys) {
                 if(key == keys[0]){
                 output = output[key]
@@ -58,6 +61,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 output = output.key;
             }
             }
+                console.log("getCharacter output not_final = " + JSON.stringify(output));
             }
             console.log("getCharacter output = " + JSON.stringify(output));
             for (let i in output) {
