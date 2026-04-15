@@ -62,7 +62,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
             for (let i in output) {
                     console.log("getCharacter i = " + i);
-                    console.log("getCharacter output.i = " + output.i);
+                    console.log("getCharacter output.i = " + JSON.stringify(output.i));
                 if (output.i == null || output.i == '') {
                     for (t of await getAchievement(achievRoute, keys.splice(0, 2))) {
                         const title = document.createElement("h4");
