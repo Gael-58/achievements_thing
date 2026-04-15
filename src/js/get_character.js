@@ -75,6 +75,8 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     for (let t in newData) {
+                        
+                        console.log("newdata[t]" + newData[t]);
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
@@ -88,7 +90,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
-                        title.innerText = "Name";
+                        title.innerText = "Method";
                         descr.innerText = newData[t].method;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
@@ -97,7 +99,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     }
 
                 } else if (JSON.stringify(output[i]).includes(':')) {
-                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(':') + ") (" + JSON.stringify(output[i]) + ")");
+                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(':{') + ") (" + JSON.stringify(output[i]) + ")");
                     
                     getCharacterAchievements.apply(null, [outputDiv, charRoute, achievRoute, ...keys, i]);
                 } else {
@@ -105,6 +107,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     for (let t in newData) {
                     // for (t of newData) {
+                        console.log("newdata[t]" + newData[t]);
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
@@ -119,7 +122,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
 
-                        title.innerText = "Name";
+                        title.innerText = "Method";
                         descr.innerText = newData[t].method;
                         outputDiv.appendChild(title.cloneNode(true));
                         outputDiv.appendChild(descr.cloneNode(true));
