@@ -61,8 +61,9 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 } else{*/
                 output = output.key;
             //}
-            }
                 console.log("getCharacter output not_final = " + JSON.stringify(output));
+            }
+                
             }
             console.log("getCharacter output = " + JSON.stringify(output));
             for (let i in output) {
