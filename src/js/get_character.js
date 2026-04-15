@@ -76,7 +76,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     for (let t in newData) {
                         
-                        console.log("newdata[t]" + newData[t]);
+                        console.log("newdata[t] " + newData[t]);
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
@@ -99,7 +99,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     }
 
                 } else if (JSON.stringify(output[i]).includes(':')) {
-                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(':{') + ") (" + JSON.stringify(output[i]) + ")");
+                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":{") + ") (" + JSON.stringify(output[i]) + ")");
                     
                     getCharacterAchievements.apply(null, [outputDiv, charRoute, achievRoute, ...keys, i]);
                 } else {
@@ -107,7 +107,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     for (let t in newData) {
                     // for (t of newData) {
-                        console.log("newdata[t]" + newData[t]);
+                        console.log("newdata[t] " + newData[t]);
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
