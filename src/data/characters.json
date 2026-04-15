@@ -4,7 +4,7 @@
             "display_name": "Jimmy Quickshot",
             "achievements": {
                 "unique": {
-                    "char_0001_jimmy": {
+                    "char_0001_jimmy_unique": {
                         "fable_don_quijote_ripoff": null,
                         "fable_merc_prince": null,
                         "fable_neon_cowboy": null
@@ -123,7 +123,7 @@
                 },
                 "pet_collector_euphemism": 15,
                 "unique": {
-                    "snake_utziah_main": {
+                    "snake_utziah_main_unique": {
                         "god_sneaky_snake": null,
                         "god_revive_snake": null,
                         "thief_shiny_tooth": false
