@@ -155,6 +155,7 @@
         "sick_dragon_prevaler": {
             "name": "Prevaler",
             "display_name": "Prevaler",
+            "details": "this is a test to see if the detalis thing is workin'",
             "achievements": {
                 "death_defier": {"4": null},
                 "legend": {
