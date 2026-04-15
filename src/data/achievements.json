@@ -1,6 +1,6 @@
 {
         "unique": {
-            "char_0001_jimmy": {
+            "char_0001_jimmy_unique": {
                 "fable_don_quijote_ripoff": {
                     "name": "Don Quijote",
                     "effect": "[???]",
@@ -17,7 +17,7 @@
                     "method": "unique title"
                 }
             },
-            "snake_utziah_main": {
+            "snake_utziah_main_unique": {
                 "god_sneaky_snake": {
                     "name": "Serpent of Secrets",
                     "effect": "[wip]",
