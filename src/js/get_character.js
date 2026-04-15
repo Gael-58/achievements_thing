@@ -38,7 +38,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         section.innerText = "Achievements:";
         divCharacterDetails.appendChild(section.cloneNode(true));
         divToAppendInto.appendChild(divCharacterDetails.cloneNode(true));
-        getCharacterAchievements(divToAppendInto, "", charRoute, achievRoute, key, "achievements");
+        getCharacterAchievements(divToAppendInto, "-", charRoute, achievRoute, key, "achievements");
         //getCharacterAchievements(divCharacterDetails, "" charRoute, achievRoute, key, "achievements");
 
         async function getCharacterAchievements(outputDiv, prefix, charRoute, achievRoute, ...keys) {
