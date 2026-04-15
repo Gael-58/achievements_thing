@@ -40,7 +40,9 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         divCharacterDetails.appendChild(br.cloneNode(true));
         section.innerText = "Achievements:";
         divCharacterDetails.appendChild(section.cloneNode(true));
-        getCharacterAchievements(divCharacterDetails, charRoute, achievRoute, key, "achievements");
+        divToAppendInto.appendChild(divCharacterDetails.cloneNode(true));
+        getCharacterAchievements(divToAppendInto, charRoute, achievRoute, key, "achievements");
+        //getCharacterAchievements(divCharacterDetails, charRoute, achievRoute, key, "achievements");
 
         async function getCharacterAchievements(outputDiv, charRoute, achievRoute, ...keys) {
             console.log("NEW getCharacter ROUND");
@@ -131,7 +133,6 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
     }
     
-    divToAppendInto.appendChild(divCharacterDetails.cloneNode(true));
 
 
 }
