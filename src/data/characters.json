@@ -157,7 +157,7 @@
             "display_name": "Prevaler",
             "details": "this is a test to see if the detalis thing is workin'",
             "achievements": {
-                "death_defier": {"4": null},
+                "death_defier": {"3": null},
                 "legend": {
                     "worshipped": {"1": null}
                 },
