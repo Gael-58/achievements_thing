@@ -28,7 +28,7 @@ btnGetSelection.addEventListener("click", function (event) {
         for (let key of Array.from(document.getElementById("characterSelect")).filter(option => option.selected).map(option => option.value)) {
                         
             getCharacterDetails(divInnerStuff, charRoute, achievRoute, key);
-            console.log("finalizado?");
+            // console.log("finalizado?");
         }
 
 
