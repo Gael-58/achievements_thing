@@ -52,7 +52,6 @@
                     "1": null
                 },
                 "giant_killer_metaphorical": 4,
-                "reckless_one": null,
                 "world_tree_guardian": null
             }
         },
@@ -70,9 +69,8 @@
                     "eldrich_scholar": null,
                     "s_o_f_t": null
                 },
-                "heavy_history": {
-                    "5": null
-                },
+                "heavy_history":5
+                "giant_killer_metaphorical": 3,
                 "loremaster": null
             }
         },
@@ -169,6 +167,8 @@
                 "mutant": 10,
                 "trailblazer": null,
                 "indomitable_spirit": null
+                "heavy_history":2
+                
             }
         }
     }
