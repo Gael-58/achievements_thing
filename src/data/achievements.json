@@ -3,12 +3,12 @@
             "char_0001_jimmy_unique": {
                 "fable_don_quijote_ripoff": {
                     "name": "Don Quijote (namesake)",
-                    "effect": "[???]",
+                    "effect": "[WIP]",
                     "method": "unique title"
                 },
                 "fable_merc_prince": {
                     "name": "Merciful Mercenary Prince",
-                    "effect": "[???]",
+                    "effect": "[WIP]",
                     "method": "unique title"
                 },
                 "fable_neon_cowboy": {
@@ -24,7 +24,7 @@
                     "method": "unique title"
                 },
                 "god_revive_snake": {
-                    "name": "",
+                    "name": "serpent of rebirth",
                     "effect": "cost of resurrection varies depending on how much the final form given to the target resembles a snake, from 10% increase in cost to 25% reduction. this does not take into account the original form of the target, only the form they are being ressurected as.",
                     "method": "unique title"
                 },
@@ -183,7 +183,7 @@
         },
         "indomitable_spirit": {
             "name": "indomitable spirit",
-            "effect": "???",
+            "effect": "[WIP]",
             "method": "refuse to give up even when all hope is lost"
         },
         "reckless_one": {
@@ -227,8 +227,8 @@
             "method": "gain guardianship over a world tree."
         },
         "heavy_history": {
-            "name": "Weight Oof History {n}",
-            "effect": "",
+            "name": "Weight Of History {n}",
+            "effect": "[WIP]",
             "method": "learn about 10/50/100/500... dead civilizations in detail"
         },
         "giant_killer_metaphorical": {
