@@ -66,10 +66,10 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
             }
                 
             }
-            console.log("getCharacter true output = " + JSON.stringify(output));
+            // console.log("getCharacter true output = " + JSON.stringify(output));
             for (let i in output) {
-                    console.log("getCharacter i = " + i);
-                     console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
+                     // console.log("getCharacter i = " + i);
+                     // console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
                 if (output[i] == null || output[i] == '') {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
                     // console.log("getAchievement.apply returns: " + JSON.stringify(newData));
