@@ -110,8 +110,8 @@
                 "method": "be a naturally gifted genius in at least one magical field"
             },
             "martial_genius": {
-                "name": "magical genius",
-                "effect": "slight improvement to mana affinity",
+                "name": "martial genius",
+                "effect": "slight improvement to qi affinity and fighting ability",
                 "method": "be a naturally gifted genius in at least one martial field"
             },
             "idiot_genius": {
