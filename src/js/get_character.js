@@ -4,8 +4,8 @@ import { getData } from 'https://gael-58.github.io/achievements_thing/src/js/get
 export async function getCharacterDetails(divToAppendInto, charRoute, achievRoute, key) {
     const divCharacterDetails = document.createElement("div");
     let data = await getData(charRoute);
-    console.log("key " + key);
-    console.log("data[key] = " + data[key]);
+    // console.log("key " + key);
+    // console.log("data[key] = " + data[key]);
     if (data[key] != null && data[key] != '') {
 
         const section = document.createElement("h1");
@@ -44,9 +44,9 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         //getCharacterAchievements(divCharacterDetails, "     " charRoute, achievRoute, key, "achievements");
 
         async function getCharacterAchievements(outputDiv, prefix, charRoute, achievRoute, ...keys) {
-            console.log("NEW getCharacter ROUND");
-            console.log("getCharacter charRoute = " + charRoute);
-            console.log("getCharacter achievRoute = " + achievRoute);
+            // console.log("NEW getCharacter ROUND");
+            // console.log("getCharacter charRoute = " + charRoute);
+            // console.log("getCharacter achievRoute = " + achievRoute);
             
             console.log("getCharacter keys = " + keys.toString());
             let output = await getData(charRoute);
@@ -56,7 +56,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
 
                 
             for (let key of keys) {
-                    console.log("getCharacter output key = " + key);
+                    // console.log("getCharacter output key = " + key);
                 //if(key == keys[0]){
                 output = output[key]
                 /*} else{
@@ -72,10 +72,10 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                      console.log("getCharacter output[i] = " + JSON.stringify(output[i]));
                 if (output[i] == null || output[i] == '') {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
-                    console.log("getAchievement.apply returns: " + JSON.stringify(newData));
+                    // console.log("getAchievement.apply returns: " + JSON.stringify(newData));
 
                     
-                        console.log("newdata " + newData);
+                        // console.log("newdata " + newData);
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
@@ -97,14 +97,14 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                     
 
                 } else if (JSON.stringify(output[i]).includes(':')) {
-                    console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":") + ") (" + JSON.stringify(output[i]) + ")");
+                    // console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":") + ") (" + JSON.stringify(output[i]) + ")");
                     
                     getCharacterAchievements.apply(null, [outputDiv, (prefix + "     "), charRoute, achievRoute, ...keys, i]);
                 } else {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
-                    console.log("getAchievement.apply returns: " + JSON.stringify(newData));
+                    // console.log("getAchievement.apply returns: " + JSON.stringify(newData));
                     
-                        console.log("newdata " + newData);
+                        // console.log("newdata " + newData);
                         const title = document.createElement("h4");
                         const descr = document.createElement("p");
                         const br = document.createElement("br");
