@@ -41,7 +41,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
         divCharacterDetails.appendChild(section.cloneNode(true));
         divToAppendInto.appendChild(divCharacterDetails.cloneNode(true));
         getCharacterAchievements(divToAppendInto, "-", charRoute, achievRoute, key, "achievements");
-        //getCharacterAchievements(divCharacterDetails, "" charRoute, achievRoute, key, "achievements");
+        //getCharacterAchievements(divCharacterDetails, "  " charRoute, achievRoute, key, "achievements");
 
         async function getCharacterAchievements(outputDiv, prefix, charRoute, achievRoute, ...keys) {
             console.log("NEW getCharacter ROUND");
@@ -99,7 +99,7 @@ export async function getCharacterDetails(divToAppendInto, charRoute, achievRout
                 } else if (JSON.stringify(output[i]).includes(':')) {
                     console.log("into getCharacters again (" + JSON.stringify(output[i]).includes(":") + ") (" + JSON.stringify(output[i]) + ")");
                     
-                    getCharacterAchievements.apply(null, [outputDiv, (prefix + "      "), charRoute, achievRoute, ...keys, i]);
+                    getCharacterAchievements.apply(null, [outputDiv, (prefix + "  "), charRoute, achievRoute, ...keys, i]);
                 } else {
                     const newData = await getAchievement.apply(null, [achievRoute, ...keys.slice(2,keys.length), i]);
                     console.log("getAchievement.apply returns: " + JSON.stringify(newData));
