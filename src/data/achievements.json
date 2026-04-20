@@ -1,269 +1,269 @@
 {
-        "unique": {
-            "char_0001_jimmy_unique": {
-                "fable_don_quijote_ripoff": {
-                    "name": "Don Quijote (namesake)",
-                    "effect": "[WIP]",
-                    "method": "unique title"
-                },
-                "fable_merc_prince": {
-                    "name": "Merciful Mercenary Prince",
-                    "effect": "[WIP]",
-                    "method": "unique title"
-                },
-                "fable_neon_cowboy": {
-                    "name": "Neon Cowboy",
-                    "effect": "[wip]",
-                    "method": "unique title"
-                }
-            },
-            "snake_utziah_main_unique": {
-                "god_sneaky_snake": {
-                    "name": "Serpent of Secrets",
-                    "effect": "[wip]",
-                    "method": "unique title"
-                },
-                "god_revive_snake": {
-                    "name": "serpent of rebirth",
-                    "effect": "cost of resurrection varies depending on how much the final form given to the target resembles a snake, from 10% increase in cost to 25% reduction. this does not take into account the original form of the target, only the form they are being ressurected as.",
-                    "method": "unique title"
-                },
-                "thief_shiny_tooth": {
-                    "name": "Jewel-Fang Rogue (hidden)",
-                    "effect": "[wip]",
-                    "method": "unique title"
-                }
-            }
-        },
-        "death_defier": {
-            "1": {
-                "name": "death defier",
-                "effect": "once a week, when at full health, an attack that would kill the user instantly instead leaves them at 1HP",
-                "method": "defy death once"
-            },
-            "2": {
-                "name": "death defier II",
-                "effect": "same effect as the previous level, but cooldown changed to once a day",
-                "method": "defy death ten times"
-            },
-            "3": {
-                "name": "death defier III",
-                "effect": "same effect as the previous level, but applies to the soul as well",
-                "method": "defy soul death once"
-            },
-            "4": {
-                "name": "death defier IV",
-                "effect": "same effect as the previous level, but cooldown removed, it now applies at all times the user recieves a killing blow at full HP",
-                "method": "aquire a way to consistently defy death"
-            }
-        },
-        "legend": {
-            "roumoured": {
-                "name": "roumoured",
-                "effect": "slight boost to reputation",
-                "method": "be the subject of various roumours"
-            },
-            "famous": {
-                "name": "famous",
-                "effect": "slight boost to reputation",
-                "method": "be widely known in a community"
-            },
-            "told_about": {
-                "name": "told about",
-                "effect": "small boost to reputation",
-                "method": "have stories told about you circulating in a big enough community"
-            },
-            "fabled": {
-                "name": "fabled",
-                "effect": "medium boost to reputation",
-                "method": "have at least one fable to your name"
-            },
-            "split_fables": {
-                "name": "split fables",
-                "effect": "???",
-                "method": "have multiple fables that people believe to come from different beings than one another."
-            },
-            "worshipped": {
-                "1": {
-                    "name": "worshipped I",
-                    "effect": "big boost on popularity",
-                    "method": "be worshipped as a deity by enough people"
-                }
-            }
-        },
-        "outsider": {
-            "w_f_f_o_l": {
-                "name": "wanderer from far off lands",
-                "effect": "???",
-                "method": "you're not from around here, are you?"
-            },
-            "outer_consort": {
-                "name": "outer consort",
-                "effect": "???",
-                "method": "be careful"
-            }
-        },
-        "genius": {
-            "magic_genius": {
-                "name": "magical genius",
-                "effect": "slight improvement to mana affinity",
-                "method": "be a naturally gifted genius in at least one magical field"
-            },
-            "martial_genius": {
-                "name": "martial genius",
-                "effect": "slight improvement to qi affinity and fighting ability",
-                "method": "be a naturally gifted genius in at least one martial field"
-            },
-            "idiot_genius": {
-                "name": "idiot genius",
-                "effect": "boost to unconventional learning",
-                "method": "that seems contradictory, doesn't it?"
-            },
-            "strategic_genius": {
-                "name": "strategical genius",
-                "effect": "slight improvement to reasoning ability",
-                "method": "be a naturally gifted genius in at least one strategical field"
-            }
-        },
-        "forbidden_knowledge": {
-            "eldrich_scholar": {
-                "name": "Eldritch Scholar",
-                "effect": "slight decrease to negative effects inflicted by reading forbidden texts.",
-                "method": "read at least 100 texts which are known to drive readers insane due to the knowledge within"
-            },
-            "s_o_f_t": {
-                "name": "Seeker of Forbidden Truths",
+    "unique": {
+        "char_0001_jimmy_unique": {
+            "fable_don_quijote_ripoff": {
+                "name": "Don Quijote (namesake)",
                 "effect": "[WIP]",
-                "method": "uncover at least 5 forbidden truths of existence"
+                "method": "unique title"
+            },
+            "fable_merc_prince": {
+                "name": "Merciful Mercenary Prince",
+                "effect": "[WIP]",
+                "method": "unique title"
+            },
+            "fable_neon_cowboy": {
+                "name": "Neon Cowboy",
+                "effect": "[wip]",
+                "method": "unique title"
             }
         },
-        "legacy": {
-            "legacy_SotFV": {
-                "name": "The Wayforger",
-                "effect": "???",
-                "method": "???"
+        "snake_utziah_main_unique": {
+            "god_sneaky_snake": {
+                "name": "Serpent of Secrets",
+                "effect": "[wip]",
+                "method": "unique title"
             },
-            "legacy_GKotN": {
-                "name": "great netherworld lord",
-                "effect": "???",
-                "method": "???"
+            "god_revive_snake": {
+                "name": "serpent of rebirth",
+                "effect": "cost of resurrection varies depending on how much the final form given to the target resembles a snake, from 10% increase in cost to 25% reduction. this does not take into account the original form of the target, only the form they are being ressurected as.",
+                "method": "unique title"
             },
-            "legacy_DC": {
-                "name": "truly dignified being",
-                "effect": "???",
-                "method": "???"
-            },
-            "legacy_ToD": {
-                "name": "Divinity thief",
-                "effect": "???",
-                "method": "???"
-            },
-            "legacy_SST": {
-                "name": "silver skull tribesman",
-                "effect": "???",
-                "method": "???"
+            "thief_shiny_tooth": {
+                "name": "Jewel-Fang Rogue (hidden)",
+                "effect": "[wip]",
+                "method": "unique title"
             }
+        }
+    },
+    "death_defier": {
+        "1": {
+            "name": "death defier",
+            "effect": "once a week, when at full health, an attack that would kill the user instantly instead leaves them at 1HP",
+            "method": "defy death once"
         },
-        "EXAMPLE_COMPLEX": {
-            "EXAMPLE_COMPLEX_0": {
-                "name": "",
-                "effect": "",
-                "method": ""
-            },
-            "EXAMPLE_COMPLEX_1": {
-                "name": "",
-                "effect": "",
-                "method": ""
+        "2": {
+            "name": "death defier II",
+            "effect": "same effect as the previous level, but cooldown changed to once a day",
+            "method": "defy death ten times"
+        },
+        "3": {
+            "name": "death defier III",
+            "effect": "same effect as the previous level, but applies to the soul as well",
+            "method": "defy soul death once"
+        },
+        "4": {
+            "name": "death defier IV",
+            "effect": "same effect as the previous level, but cooldown removed, it now applies at all times the user recieves a killing blow at full HP",
+            "method": "aquire a way to consistently defy death"
+        }
+    },
+    "legend": {
+        "roumoured": {
+            "name": "roumoured",
+            "effect": "slight boost to reputation",
+            "method": "be the subject of various roumours"
+        },
+        "famous": {
+            "name": "famous",
+            "effect": "slight boost to reputation",
+            "method": "be widely known in a community"
+        },
+        "told_about": {
+            "name": "told about",
+            "effect": "small boost to reputation",
+            "method": "have stories told about you circulating in a big enough community"
+        },
+        "fabled": {
+            "name": "fabled",
+            "effect": "medium boost to reputation",
+            "method": "have at least one fable to your name"
+        },
+        "split_fables": {
+            "name": "split fables",
+            "effect": "???",
+            "method": "have multiple fables that people believe to come from different beings than one another."
+        },
+        "worshipped": {
+            "1": {
+                "name": "worshipped I",
+                "effect": "big boost on popularity",
+                "method": "be worshipped as a deity by enough people"
             }
+        }
+    },
+    "outsider": {
+        "w_f_f_o_l": {
+            "name": "wanderer from far off lands",
+            "effect": "???",
+            "method": "you're not from around here, are you?"
         },
-        "idiot": {
-            "name": "idiot",
-            "effect": "bravery checks more likely to succeed",
-            "method": "act foolishly(?)"
+        "outer_consort": {
+            "name": "outer consort",
+            "effect": "???",
+            "method": "be careful"
+        }
+    },
+    "genius": {
+        "magic_genius": {
+            "name": "magical genius",
+            "effect": "slight improvement to mana affinity",
+            "method": "be a naturally gifted genius in at least one magical field"
         },
-        "indomitable_spirit": {
-            "name": "indomitable spirit",
+        "martial_genius": {
+            "name": "martial genius",
+            "effect": "slight improvement to qi affinity and fighting ability",
+            "method": "be a naturally gifted genius in at least one martial field"
+        },
+        "idiot_genius": {
+            "name": "idiot genius",
+            "effect": "boost to unconventional learning",
+            "method": "that seems contradictory, doesn't it?"
+        },
+        "strategic_genius": {
+            "name": "strategical genius",
+            "effect": "slight improvement to reasoning ability",
+            "method": "be a naturally gifted genius in at least one strategical field"
+        }
+    },
+    "forbidden_knowledge": {
+        "eldrich_scholar": {
+            "name": "Eldritch Scholar",
+            "effect": "slight decrease to negative effects inflicted by reading forbidden texts.",
+            "method": "read at least 100 texts which are known to drive readers insane due to the knowledge within"
+        },
+        "s_o_f_t": {
+            "name": "Seeker of Forbidden Truths",
             "effect": "[WIP]",
-            "method": "refuse to give up even when all hope is lost"
-        },
-        "reckless_one": {
-            "name": "reckless one",
-            "effect": "[WIP]",
-            "method": "go into danger 10.000 times or more, and survive each one"
-        },
-        "loremaster": {
-            "name": "Loremaster",
-            "effect": "slightly improved reading comprehension and reading speed",
-            "method": "a loremaster must master lore."
-        },
-        "dirty_coin_squire": {
-            "name": "Squire of the Blackened Danarius",
-            "effect": "slightly improved reputation with the fallen",
+            "method": "uncover at least 5 forbidden truths of existence"
+        }
+    },
+    "legacy": {
+        "legacy_SotFV": {
+            "name": "The Wayforger",
+            "effect": "???",
             "method": "???"
         },
-        "trailblazer": {
-            "name": "trailblazer",
-            "effect": "[WIP]",
-            "method": "pave a path nobody's tread before."
-        },
-        "poker_master": {
-            "name": "Poker Master",
-            "effect": "[WIP]",
-            "method": "be incredibly good at poker."
-        },
-        "unlucky_bastard": {
-            "name": "Naturally Unlucky.",
-            "effect": "no obserbable effects.",
-            "method": "it takes a lot of bad luck to be aknowledge like this."
-        },
-        "well_connected": {
-            "name": "Well Connected",
-            "effect": "dealmaking charisma increased.",
-            "method": "you gotta form a nice web of connections with you at the center."
-        },
-        "world_tree_guardian": {
-            "name": "Guardian of the world tree",
+        "legacy_GKotN": {
+            "name": "great netherworld lord",
             "effect": "???",
-            "method": "gain guardianship over a world tree."
+            "method": "???"
         },
-        "heavy_history": {
-            "name": "Weight Of History {n}",
-            "effect": "[WIP]",
-            "method": "learn about 10/50/100/500... dead civilizations in detail"
+        "legacy_DC": {
+            "name": "truly dignified being",
+            "effect": "???",
+            "method": "???"
         },
-        "giant_killer_metaphorical": {
-            "name": "Giant Killer {n}",
-            "effect": "slight stat boost against enemies stronger than yourself",
-            "method": "kill an enemy that's much stronger than you."
+        "legacy_ToD": {
+            "name": "Divinity thief",
+            "effect": "???",
+            "method": "???"
         },
-        "pet_eater": {
-            "name": "pet eater {n}",
-            "effect": "slight increase in beasts's fear for you, stacks",
-            "method": "not going to explain this one"
+        "legacy_SST": {
+            "name": "silver skull tribesman",
+            "effect": "???",
+            "method": "???"
+        }
+    },
+    "EXAMPLE_COMPLEX": {
+        "EXAMPLE_COMPLEX_0": {
+            "name": "",
+            "effect": "",
+            "method": ""
         },
-        "pet_collector_euphemism": {
-            "name": "'pet' collector {n}",
-            "effect": "slight increase in specific kinds of leadership",
-            "method": "not going to explain this one"
-        },
-        "cassanova": {
-            "name": "Cassanova {n}",
-            "effect": "slight improvement to attractiveness and seduction-based charisma. scales logarythmically with achievement LvL",
-            "method": "seduce {n} people."
-        },
-        "win_streak": {
-            "name": "Win Streak {n}",
-            "effect": "[WIP]",
-            "method": "keep winning, but don't loose."
-        },
-        "mutant": {
-            "name": "Mutant {n}",
-            "effect": "multiplies the positive effects of mutations by 1.5, and the negative effects by 1.1, stacks.",
-            "method": "have at least one mutation."
-        },
-        "EXAMPLE_SIMPLE": {
+        "EXAMPLE_COMPLEX_1": {
             "name": "",
             "effect": "",
             "method": ""
         }
+    },
+    "idiot": {
+        "name": "idiot",
+        "effect": "bravery checks more likely to succeed",
+        "method": "act foolishly(?)"
+    },
+    "indomitable_spirit": {
+        "name": "indomitable spirit",
+        "effect": "[WIP]",
+        "method": "refuse to give up even when all hope is lost"
+    },
+    "reckless_one": {
+        "name": "reckless one",
+        "effect": "[WIP]",
+        "method": "go into danger 10.000 times or more, and survive each one"
+    },
+    "loremaster": {
+        "name": "Loremaster",
+        "effect": "slightly improved reading comprehension and reading speed",
+        "method": "a loremaster must master lore."
+    },
+    "dirty_coin_squire": {
+        "name": "Squire of the Blackened Danarius",
+        "effect": "slightly improved reputation with the fallen",
+        "method": "???"
+    },
+    "trailblazer": {
+        "name": "trailblazer",
+        "effect": "[WIP]",
+        "method": "pave a path nobody's tread before."
+    },
+    "poker_master": {
+        "name": "Poker Master",
+        "effect": "[WIP]",
+        "method": "be incredibly good at poker."
+    },
+    "unlucky_bastard": {
+        "name": "Naturally Unlucky.",
+        "effect": "no obserbable effects.",
+        "method": "it takes a lot of bad luck to be aknowledge like this."
+    },
+    "well_connected": {
+        "name": "Well Connected",
+        "effect": "dealmaking charisma increased.",
+        "method": "you gotta form a nice web of connections with you at the center."
+    },
+    "world_tree_guardian": {
+        "name": "Guardian of the world tree",
+        "effect": "???",
+        "method": "gain guardianship over a world tree."
+    },
+    "heavy_history": {
+        "name": "Weight Of History {n}",
+        "effect": "[WIP]",
+        "method": "learn about 10/50/100/500... dead civilizations in detail"
+    },
+    "giant_killer_metaphorical": {
+        "name": "Giant Killer {n}",
+        "effect": "slight stat boost against enemies stronger than yourself",
+        "method": "kill an enemy that's much stronger than you."
+    },
+    "pet_eater": {
+        "name": "pet eater {n}",
+        "effect": "slight increase in beasts's fear for you, stacks",
+        "method": "not going to explain this one"
+    },
+    "pet_collector_euphemism": {
+        "name": "'pet' collector {n}",
+        "effect": "slight increase in specific kinds of leadership",
+        "method": "not going to explain this one"
+    },
+    "cassanova": {
+        "name": "Cassanova {n}",
+        "effect": "slight improvement to attractiveness and seduction-based charisma. scales logarythmically with achievement LvL",
+        "method": "seduce {n} people."
+    },
+    "win_streak": {
+        "name": "Win Streak {n}",
+        "effect": "[WIP]",
+        "method": "keep winning, but don't loose."
+    },
+    "mutant": {
+        "name": "Mutant {n}",
+        "effect": "multiplies the positive effects of mutations by 1.5, and the negative effects by 1.1, stacks.",
+        "method": "have at least one mutation."
+    },
+    "EXAMPLE_SIMPLE": {
+        "name": "",
+        "effect": "",
+        "method": ""
+    }
 }
