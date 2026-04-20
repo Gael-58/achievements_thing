@@ -26,16 +26,15 @@ btnGetSelection.addEventListener("click", function (event) {
     (async () => {
         event.preventDefault();
         for (let key of Array.from(document.getElementById("characterSelect")).filter(option => option.selected).map(option => option.value)) {
-                        
+
             getCharacterDetails(divInnerStuff, charRoute, achievRoute, key);
             // console.log("finalizado?");
         }
 
 
-        
+
 
     })();
 });
-    document.body.appendChild(divCharacterSelect);
-    document.body.appendChild(divInnerStuff);
-    
+document.body.appendChild(divCharacterSelect);
+document.body.appendChild(divInnerStuff);
