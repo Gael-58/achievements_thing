@@ -180,7 +180,9 @@
         "achievements": {
             "giant_killer_metaphorical": 2,
             "unlucky_bastard": null,
-            "death_defier": 1
+            "death_defier": {
+                "1": null
+            }
         }
     }
 }
