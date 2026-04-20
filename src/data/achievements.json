@@ -87,7 +87,12 @@
             "1": {
                 "name": "worshipped I",
                 "effect": "big boost on popularity",
-                "method": "be worshipped as a deity by enough people"
+                "method": "be worshipped as a deity by some people"
+            },
+            "4":{
+                "name": "worshipped IV",
+                "effect": "slight boost on FP efficiency",
+                "method": "be worshipped as a deity by a country's worth of people"
             }
         }
     },
