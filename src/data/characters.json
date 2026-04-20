@@ -150,7 +150,7 @@
                 "world_tree_guardian": null
             }
         },
-        "sick_dragon_prevaler": {
+        "sick_dragon_prevaler_main": {
             "name": "Prevaler",
             "display_name": "Prevaler",
             "details": "this is a test to see if the detalis thing is workin'",
@@ -169,6 +169,15 @@
                 "indomitable_spirit": null,
                 "heavy_history":1
                 
+            }
+        },
+        "eris_vampire_main": {
+            "name": "Eris Voden",
+            "display_name": "Eris",
+            "achievements": {
+                "giant_killer_metaphorical":2,
+                "unlucky_bastard":null,
+                "death_defier":1
             }
         }
     }
