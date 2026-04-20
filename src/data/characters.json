@@ -1,183 +1,186 @@
 {
-        "char_0001_jimmy": {
-            "name": "William Romero",
-            "display_name": "Jimmy Quickshot",
-            "achievements": {
-                "unique": {
-                    "char_0001_jimmy_unique": {
-                        "fable_don_quijote_ripoff": null,
-                        "fable_merc_prince": null,
-                        "fable_neon_cowboy": null
-                    }
-                },
-                "legacy": {
-                    "legacy_GKotN": null,
-                    "legacy_DC": null,
-                    "legacy_ToD": null,
-                    "legacy_SST": null
-                },
-                "legend": {
-                    "split_fables": null
-                },
-                "genius": {
-                    "idiot_genius": null
-                },
-                "death_defier": {
-                    "4": null
-                },
-                "giant_killer_metaphorical": 23,
-                "reckless_one": null,
-                "idiot": null,
-                "world_tree_guardian": null,
-                "indomitable_spirit": null
-            }
-        },
-        "char_0002_marianne": {
-            "name": "Anabella",
-            "display_name": "Marianne Grace",
-            "achievements": {
-                "legacy": {
-                    "legacy_GKotN": null,
-                    "legacy_DC": null,
-                    "legacy_ToD": null,
-                    "legacy_SST": null
-                },
-                "legend": {
-                    "famous": null
-                },
-                "genius": {
-                    "idiot_genius": null
-                },
-                "death_defier": {
+    "char_0001_jimmy": {
+        "name": "William Romero",
+        "display_name": "Jimmy Quickshot",
+        "achievements": {
+            "unique": {
+                "char_0001_jimmy_unique": {
+                    "fable_don_quijote_ripoff": null,
+                    "fable_merc_prince": null,
+                    "fable_neon_cowboy": null
+                }
+            },
+            "legacy": {
+                "legacy_GKotN": null,
+                "legacy_DC": null,
+                "legacy_ToD": null,
+                "legacy_SST": null
+            },
+            "legend": {
+                "split_fables": null
+            },
+            "genius": {
+                "idiot_genius": null
+            },
+            "death_defier": {
+                "4": null
+            },
+            "giant_killer_metaphorical": 23,
+            "reckless_one": null,
+            "idiot": null,
+            "world_tree_guardian": null,
+            "indomitable_spirit": null
+        }
+    },
+    "char_0002_marianne": {
+        "name": "Anabella",
+        "display_name": "Marianne Grace",
+        "achievements": {
+            "legacy": {
+                "legacy_GKotN": null,
+                "legacy_DC": null,
+                "legacy_ToD": null,
+                "legacy_SST": null
+            },
+            "legend": {
+                "famous": null
+            },
+            "genius": {
+                "idiot_genius": null
+            },
+            "death_defier": {
+                "1": null
+            },
+            "giant_killer_metaphorical": 4,
+            "world_tree_guardian": null
+        }
+    },
+    "char_0004_izet": {
+        "name": "Lisabeth",
+        "display_name": "Izet Spellbringer",
+        "achievements": {
+            "legacy": {
+                "legacy_SotFV": null
+            },
+            "legend": {
+                "roumoured": null
+            },
+            "forbidden_knowledge": {
+                "eldrich_scholar": null,
+                "s_o_f_t": null
+            },
+            "heavy_history": 5,
+            "giant_killer_metaphorical": 3,
+            "loremaster": null
+        }
+    },
+    "saier_calin_main": {
+        "name": "Calin Saier",
+        "display_name": "Calin Saier",
+        "achievements": {
+            "cassanova": 17,
+            "pet_eater": 29
+        }
+    },
+    "saier_telia_main": {
+        "name": "Telia Saier",
+        "display_name": "Natalia Sage (Telia Saier)",
+        "achievements": {
+            "genius": {
+                "magic_genius": null
+            },
+            "outsider": {
+                "outer_consort": null
+            },
+            "dirty_coin_squire": null
+        }
+    },
+    "outer_danny": {
+        "name": "Danny",
+        "display_name": "Dante Sage (Daniel)",
+        "achievements": {
+            "outsider": {
+                "w_f_f_o_l": null
+            },
+            "trailblazer": null,
+            "unlucky_bastard": null,
+            "well_connected": null,
+            "poker_master": null,
+            "win_streak": 247,
+            "mutant": 1
+        }
+    },
+    "snake_utziah_main": {
+        "name": "Utziah",
+        "display_name": "Utziah",
+        "achievements": {
+            "unique": {
+                "snake_utziah_main_unique": {
+                    "god_sneaky_snake": null,
+                    "god_revive_snake": null,
+                    "thief_shiny_tooth": false
+                }
+            },
+            "legend": {
+                "worshipped": {
                     "1": null
-                },
-                "giant_killer_metaphorical": 4,
-                "world_tree_guardian": null
-            }
-        },
-        "char_0004_izet": {
-            "name": "Lisabeth",
-            "display_name": "Izet Spellbringer",
-            "achievements": {
-                "legacy": {
-                    "legacy_SotFV": null
-                },
-                "legend": {
-                    "roumoured": null
-                },
-                "forbidden_knowledge": {
-                    "eldrich_scholar": null,
-                    "s_o_f_t": null
-                },
-                "heavy_history":5,
-                "giant_killer_metaphorical": 3,
-                "loremaster": null
-            }
-        },
-        "saier_calin_main": {
-            "name": "Calin Saier",
-            "display_name": "Calin Saier",
-            "achievements": {
-                "cassanova": 17,
-                "pet_eater": 29
-            }
-        },
-        "saier_telia_main": {
-            "name": "Telia Saier",
-            "display_name": "Natalia Sage (Telia Saier)",
-            "achievements": {
-                "genius": {
-                    "magic_genius": null
-                },
-                "outsider": {
-                    "outer_consort": null
-                },
-                "dirty_coin_squire": null
-            }
-        },
-        "outer_danny": {
-            "name": "Danny",
-            "display_name": "Dante Sage (Daniel)",
-            "achievements": {
-                "outsider": {
-                    "w_f_f_o_l": null
-                },
-                "trailblazer": null,
-                "unlucky_bastard": null,
-                "well_connected": null,
-                "poker_master": null,
-                "win_streak": 247,
-                "mutant": 1
-            }
-        },
-        "snake_utziah_main": {
-            "name": "Utziah",
-            "display_name": "Utziah",
-            "achievements": {
-                "unique": {
-                    "snake_utziah_main_unique": {
-                        "god_sneaky_snake": null,
-                        "god_revive_snake": null,
-                        "thief_shiny_tooth": false
-                    }
-                },
-                "legend": {
-                    "worshipped": {
-                        "1": null
-                    }
-                },
-                "pet_collector_euphemism": 15
-            }
-        },
-        "azula_main": {
-            "name": "Azula Romero",
-            "display_name": "Azula",
-            "achievements": {
-                "genius": {
-                    "martial_genius": null
-                },
-                "world_tree_guardian": null
-            }
-        },
-        "skye_main": {
-            "name": "Skye Romero",
-            "display_name": "Skye",
-            "achievements": {
-                "genius": {
-                    "magic_genius": null,
-                    "strategic_genius": null
-                },
-                "world_tree_guardian": null
-            }
-        },
-        "sick_dragon_prevaler_main": {
-            "name": "Prevaler",
-            "display_name": "Prevaler",
-            "details": "this is a test to see if the detalis thing is workin'",
-            "achievements": {
-                "death_defier": {"3": null},
-                "legend": {
-                    "worshipped": {"1": null}
-                },
-                "genius": {
-                    "magic_genius": null,
-                    "martial_genius": null,
-                    "strategic_genius": null
-                },
-                "mutant": 10,
-                "trailblazer": null,
-                "indomitable_spirit": null,
-                "heavy_history":1
-                
-            }
-        },
-        "eris_vampire_main": {
-            "name": "Eris Voden",
-            "display_name": "Eris",
-            "achievements": {
-                "giant_killer_metaphorical":2,
-                "unlucky_bastard":null,
-                "death_defier":1
-            }
+                }
+            },
+            "pet_collector_euphemism": 15
+        }
+    },
+    "azula_main": {
+        "name": "Azula Romero",
+        "display_name": "Azula",
+        "achievements": {
+            "genius": {
+                "martial_genius": null
+            },
+            "world_tree_guardian": null
+        }
+    },
+    "skye_main": {
+        "name": "Skye Romero",
+        "display_name": "Skye",
+        "achievements": {
+            "genius": {
+                "magic_genius": null,
+                "strategic_genius": null
+            },
+            "world_tree_guardian": null
+        }
+    },
+    "sick_dragon_prevaler_main": {
+        "name": "Prevaler",
+        "display_name": "Prevaler",
+        "details": "this is a test to see if the detalis thing is workin'",
+        "achievements": {
+            "death_defier": {
+                "3": null
+            },
+            "legend": {
+                "worshipped": {
+                    "1": null
+                }
+            },
+            "genius": {
+                "magic_genius": null,
+                "martial_genius": null,
+                "strategic_genius": null
+            },
+            "mutant": 10,
+            "trailblazer": null,
+            "indomitable_spirit": null,
+            "heavy_history": 1
+        }
+    },
+    "eris_vampire_main": {
+        "name": "Eris Voden",
+        "display_name": "Eris",
+        "achievements": {
+            "giant_killer_metaphorical": 2,
+            "unlucky_bastard": null,
+            "death_defier": 1
         }
     }
+}
